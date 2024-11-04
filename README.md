@@ -1,47 +1,45 @@
-# Mobil dan Mobil Balap
+# Praktikum Pemrograman Berorientasi Objek - Pertemuan 8
 
-Proyek ini berisi implementasi kelas `Mobil` dan `MobilBalap` dalam bahasa pemrograman Python. Kelas-kelas ini digunakan untuk merepresentasikan mobil umum dan mobil balap dengan atribut dan metode yang relevan.
+## Enkapsulasi dan Access Modifiers
 
-## Struktur Kelas
+Dokumen ini menjelaskan konsep enkapsulasi dalam pemrograman berorientasi objek, khususnya dalam bahasa Python, serta bagaimana menggunakan access modifiers untuk mengatur hak akses atribut dan fungsi dalam sebuah kelas.
 
-### Mobil
+### Pengertian Enkapsulasi
 
-Kelas `Mobil` adalah kelas dasar yang memiliki atribut dan metode berikut:
+Enkapsulasi adalah konsep dalam pemrograman berorientasi objek yang digunakan untuk mengatur hak akses suatu atribut dan fungsi pada sebuah kelas. Konsep ini memungkinkan kita untuk mendefinisikan mana atribut atau fungsi yang boleh diakses secara terbuka, terbatas, atau hanya bisa diakses oleh internal kelas.
 
-- **Atribut:**
-  - `__merk`: Merek mobil (private).
-  - `__tahun`: Tahun pembuatan mobil (private).
-  - `_kecepatan_maks`: Kecepatan maksimum mobil (protected).
+### Jenis-jenis Enkapsulasi
 
-- **Metode:**
-  - `get_merk()`: Mengembalikan merek mobil.
-  - `get_tahun()`: Mengembalikan tahun pembuatan mobil.
-  - `set_kecepatan_maks(kecepatan)`: Mengatur kecepatan maksimum mobil.
-  - `tampilkan_info()`: Menampilkan informasi mobil.
+1. **Public Access Modifier**
+   - Atribut atau variabel yang bersifat publik dapat diakses dari mana saja, baik dari dalam maupun luar kelas.
 
-### MobilBalap
+2. **Protected Access Modifier**
+   - Atribut yang bersifat protected hanya dapat diakses secara terbatas oleh dirinya sendiri dan kelas turunannya. Atribut ini diawali dengan satu underscore (`_`).
 
-Kelas `MobilBalap` adalah turunan dari kelas `Mobil` dengan tambahan atribut dan metode:
+3. **Private Access Modifier**
+   - Atribut yang bersifat private hanya dapat diakses di dalam kelas itu sendiri. Atribut ini diawali dengan dua underscore (`__`).
 
-- **Atribut:**
-  - `__total_gear`: Total gear mobil balap (private).
+### Accessor dan Mutator
 
-- **Metode:**
-  - `get_total_gear()`: Mengembalikan total gear mobil balap.
-  - `tampilkan_info()`: Menampilkan informasi mobil balap, termasuk total gear.
+Accessor (getter) dan mutator (setter) adalah fungsi yang digunakan untuk mengakses dan mengatur nilai atribut pada suatu kelas. Dalam Python, accessor didefinisikan dengan decorator `@property`, sedangkan mutator menggunakan `@<nama_atribut>.setter`.
 
-## Contoh Penggunaan
+### Contoh Penggunaan
 
-Berikut adalah contoh cara menggunakan kelas `Mobil` dan `MobilBalap`:
+Berikut adalah contoh penggunaan berbagai access modifiers dalam Python:
 
-```python
-# Membuat objek Mobil
-mobil1 = Mobil("Toyota", 2020, 180)
-mobil1.tampilkan_info()
+- **Public**: Semua atribut dapat diakses dari luar kelas.
+- **Protected**: Atribut hanya diakses dari dalam kelas atau kelas turunannya.
+- **Private**: Atribut hanya diakses dari dalam kelas itu sendiri.
 
-# Membuat objek MobilBalap
-mobil_balap1 = MobilBalap("Ferrari", 2022, 350, 8)
-mobil_balap1.tampilkan_info()
+### Kesimpulan
+
+Dalam Python, access modifiers digunakan untuk mengenkapsulasi kode program, mengatur mana atribut yang boleh diakses dari luar, dan mana yang hanya diakses secara internal. Namun, perlu diperhatikan bahwa konsep "protected" dalam Python lebih merupakan konvensi daripada aturan yang ketat.
+
+### Evaluasi Individu
+
+Silakan terapkan teori enkapsulasi pada studi kasus individu dan kelompok dengan ketentuan:
+- Gunakan modifier public, protected, dan private.
+- Tulis hasilnya dalam format .word, kemudian konversi ke .pdf untuk diunggah.
 
 
 - Proyek ini di lisensikan oleh : https://github.com/el-rozi
