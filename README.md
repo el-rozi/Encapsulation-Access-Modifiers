@@ -1,10 +1,9 @@
-# Praktikum Pemrograman Berorientasi Objek - Pertemuan 8
 
-## Enkapsulasi dan Access Modifiers
+# Enkapsulasi dan Access Modifiers
 
 Dokumen ini menjelaskan konsep enkapsulasi dalam pemrograman berorientasi objek, khususnya dalam bahasa Python, serta bagaimana menggunakan access modifiers untuk mengatur hak akses atribut dan fungsi dalam sebuah kelas.
 
-### Pengertian Enkapsulasi
+## Pengertian Enkapsulasi
 
 Enkapsulasi adalah konsep dalam pemrograman berorientasi objek yang digunakan untuk mengatur hak akses suatu atribut dan fungsi pada sebuah kelas. Konsep ini memungkinkan kita untuk mendefinisikan mana atribut atau fungsi yang boleh diakses secara terbuka, terbatas, atau hanya bisa diakses oleh internal kelas.
 
