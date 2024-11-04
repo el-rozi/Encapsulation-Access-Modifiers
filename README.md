@@ -35,12 +35,6 @@ Berikut adalah contoh penggunaan berbagai access modifiers dalam Python:
 
 Dalam Python, access modifiers digunakan untuk mengenkapsulasi kode program, mengatur mana atribut yang boleh diakses dari luar, dan mana yang hanya diakses secara internal. Namun, perlu diperhatikan bahwa konsep "protected" dalam Python lebih merupakan konvensi daripada aturan yang ketat.
 
-### Evaluasi Individu
-
-Silakan terapkan teori enkapsulasi pada studi kasus individu dan kelompok dengan ketentuan:
-- Gunakan modifier public, protected, dan private.
-- Tulis hasilnya dalam format .word, kemudian konversi ke .pdf untuk diunggah.
-
 
 - Proyek ini di lisensikan oleh : https://github.com/el-rozi
 
